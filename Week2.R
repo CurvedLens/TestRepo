@@ -24,7 +24,5 @@ pollutantmean <- function(pollutant = "sulfate",id = 1:332){
     }
     means[i] <- (mean(t1, na.rm=TRUE))
   }
-  print("Means among id")
-  print(mean(means[!is.nan(means)]))
-  print(data.frame(name,means))
+  mean(means)
 }
